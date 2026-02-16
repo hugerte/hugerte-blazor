@@ -1,18 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
-    <PackageId>TinyMCE.Blazor</PackageId>
-    <Version>2.2.1</Version>
-    <Authors>Tiny</Authors>
-    <Company>Tiny</Company>
-    <PackageTags>TinyMCE;RTE;Blazor;Component;Rich;Text;Editor;rich-text-editor</PackageTags>
-    <Description>This package is an official wrapper around TinyMCE to facilitate its use in Blazor applications. TinyMCE is a rich text editing platform and the most advanced WYSIWYG HTML editor designed to simplify website content creation.</Description>
+    <PackageId>HugeRTE.Blazor</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>HugeRTE Contributors</Authors>
+    <PackageTags>HugeRTE;RTE;Blazor;Component;Rich;Text;Editor;rich-text-editor</PackageTags>
+    <Description>This package is an official wrapper around HugeRTE to facilitate its use in Blazor applications. HugeRTE is a rich text editing platform in the form of a WYSIWYG HTML editor simplifying website content creation. Fork of TinyMCE due to license change.</Description>
     <TargetFrameworks>net8.0</TargetFrameworks>
     <RazorLangVersion>3.0</RazorLangVersion>
-    <RepositoryUrl>https://github.com/tinymce/tinymce-blazor</RepositoryUrl>
+    <RepositoryUrl>https://github.com/hugerte/hugerte-blazor</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageIcon>tiny-icon.png</PackageIcon>
     <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../CHANGELOG.md"))</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
@@ -21,6 +19,5 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" Condition="'$(TargetFramework)' == 'net8.0'" />
     <None Include="../LICENSE.txt" pack="true" PackagePath="" />
     <None Include="../README.md" pack="true" PackagePath="" />
-    <None Include="../tiny-icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>

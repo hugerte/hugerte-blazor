@@ -6,7 +6,7 @@
 
 <h1>Editor API</h1>
 
-<p>Shows various API interations with the tinymce editor instance.</p>
+<p>Shows various API interations with the hugerte editor instance.</p>
 
 <script>
 // Expose the configuration through a page global
@@ -14,7 +14,7 @@ window.MyCustomNamespace = {
   config: {
     init_instance_callback: function (editor) {
       editor.on('focus blur', function (e) {
-        DotNet.invokeMethodAsync('TinyMCE.BlazorDemoApp', 'LogEvent', e.type);
+        DotNet.invokeMethodAsync('HugeRTE.BlazorDemoApp', 'LogEvent', e.type);
       });
     }
   }
@@ -24,13 +24,11 @@ window.MyCustomNamespace = {
 <Editor
   @ref="editor"
   Inline=false
-  CloudChannel="8"
-  LicenseKey="gpl"
+  CdnVersion="1"
   Value="@content"
   JsConfSrc="MyCustomNamespace.config"
   Disable=false
-  ApiKey="@Configuration["BlazorDemoApp:ApiKey"]"
-  ClassName="tinymce-wrapper"
+  ClassName="hugerte-wrapper"
 />
 
 <button class="btn btn-primary" @onclick="ChangeContent">ChangeContent</button>
@@ -38,7 +36,7 @@ window.MyCustomNamespace = {
 
 @code {
     private string content = "inital content";
-    private TinyMCE.Blazor.Editor? editor;
+    private HugeRTE.Blazor.Editor? editor;
 
     private void ChangeContent()
     {
@@ -54,7 +52,6 @@ window.MyCustomNamespace = {
     [JSInvokable]
     public static void LogEvent(string name)
     {
-        Console.WriteLine("TinyMCE editor event: " + name);
+        Console.WriteLine("HugeRTE editor event: " + name);
     }
 }
-

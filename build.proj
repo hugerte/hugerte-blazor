@@ -4,8 +4,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Projects Include="TinyMCE.Blazor/TinyMCE.Blazor.csproj" />
-    <Projects Include="TinyMCE.BlazorDemoApp/TinyMCE.BlazorDemoApp.csproj" />
+    <Projects Include="HugeRTE.Blazor/HugeRTE.Blazor.csproj" />
+    <Projects Include="HugeRTE.BlazorDemoApp/HugeRTE.BlazorDemoApp.csproj" />
   </ItemGroup>
 
   <Target Name="Clean">

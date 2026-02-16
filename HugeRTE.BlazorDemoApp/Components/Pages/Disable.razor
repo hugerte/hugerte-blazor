@@ -1,0 +1,22 @@
+@page "/disable"
+@rendermode InteractiveServer
+@using System.ComponentModel.DataAnnotations
+@inject IConfiguration Configuration
+
+<PageTitle>Disable</PageTitle>
+
+<h1>Disable</h1>
+
+<div class="content">
+  <h3>Disable</h3>
+  <Editor
+    @bind-Disable=_disable
+    ScriptSrc="@scriptUrl"
+  />
+  <label><input type="checkbox" @bind="_disable"> disable</label>
+</div>
+
+@code {
+  private string? scriptUrl;
+  private bool _disable = true;
+}

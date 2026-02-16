@@ -7,14 +7,13 @@
 
 <h1>Editor EditForm</h1>
 
-<p>Using TinyMCE in a EditForm.</p>
+<p>Using HugeRTE in a EditForm.</p>
 
 <EditForm Model="@myModel" OnValidSubmit="@HandleValidSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <Editor 
-      ApiKey="@Configuration["BlazorDemoApp:ApiKey"]"
+    <Editor
       Field="@(() => myModel.Content)"
       @bind-Value="@myModel.Content"
     />
@@ -35,4 +34,3 @@
       public string Content { get; set; } = "";
     }
 }
-

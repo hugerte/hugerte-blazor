@@ -13,4 +13,4 @@ assignees: ''
 
 **What is the expected behavior?**
 
-**Which versions of TinyMCE, and which browser / OS are affected by this issue? Did this work in previous versions of TinyMCE or `tinymce-blazor`?**
+**Which versions of HugeRTE, and which browser / OS are affected by this issue? Did this work in previous versions of HugeRTE or `hugerte-blazor`?**

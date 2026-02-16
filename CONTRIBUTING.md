@@ -9,17 +9,17 @@ Unfortunately, the release and publish process needs a few manual steps: updatin
 ### Updating the documentation
 
 1. Head over to `nuget.org` and log in.
-2. Open the `TinyMCE.Blazor` package
+2. Open the `HugeRTE.Blazor` package
 3. Click  on `Manage package`
 4. Open up the `Documentation` section
-5. You can use the link to the github repo `README.md` at https://raw.githubusercontent.com/tinymce/tinymce-blazor/master/README.md
+5. You can use the link to the github repo `README.md` at https://raw.githubusercontent.com/hugerte/hugerte-blazor/master/README.md
 
-### Starting the TinyMCE.BlazorDemoApp
+### Starting the HugeRTE.BlazorDemoApp
 
 This demo will re-compile the blazor editor component and has various demos for different use cases.
 
 ```
-$ dotnet watch --project TinyMCE.BlazorDemoApp
+$ dotnet watch --project HugeRTE.BlazorDemoApp
 ```
 
 ### Msbuild actions
@@ -51,6 +51,5 @@ docker run -it --rm \
   -p 5277:5277 \
   -e DOTNET_USE_POLLING_FILE_WATCHER=true \
   mcr.microsoft.com/dotnet/sdk:8.0 \
-  dotnet watch --project TinyMCE.BlazorDemoApp
+  dotnet watch --project HugeRTE.BlazorDemoApp
 ```
-

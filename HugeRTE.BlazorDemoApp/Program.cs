@@ -1,4 +1,4 @@
-using TinyMCE.BlazorDemoApp.Components;
+using HugeRTE.BlazorDemoApp.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
